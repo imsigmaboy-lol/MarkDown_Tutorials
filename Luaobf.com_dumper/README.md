@@ -7,4 +7,8 @@ cd ./luau
 wget https://github.com/imsigmaboy-lol/luau/releases/download/aarch64/AARCH64.zip
 unzip AARCH64.zip
 rm -rf AARCH64.zip
+chmod +x ./luau ./luau-ast ./luau-reduce ./luau-bytecode ./ luau-analyze ./luau-compile
+for f in  ./luau ./luau-ast ./luau-reduce ./luau-bytecode ./ luau-analyze ./luau-compile; do
+    ln -s "$HOME/luau/$f" "$PREFIX/bin/$f"
+done
 ```
