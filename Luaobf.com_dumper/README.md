@@ -1,6 +1,8 @@
 # luaobfsufcator.com BYTECODE dumper
 ## Firstly run this to install the dependencies
 ```bash
+termux-setup-storage
+[ -x "$PREFIX/bin/wget" ] || pkg install -y wget
 cd "/data/data/com.termux/files/home"
 mkdir luau
 cd ./luau
