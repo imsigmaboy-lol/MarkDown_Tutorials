@@ -3,7 +3,7 @@
 ```bash
 termux-setup-storage
 [ -x "$PREFIX/bin/wget" ] || pkg install -y wget
-pkg update
+pkg upgrade
 cd "/data/data/com.termux/files/home"
 mkdir luau
 cd ./luau
