@@ -15,3 +15,8 @@ run this
 ```
 ## Next
 You should see a brand new file named "Dump_bytecode.py" this is (as the name suggets) the script that can dump the bytecode.
+
+To use this brand new file, do 
+```python
+python Dump_bytecode.py
+```
