@@ -24,14 +24,14 @@ def insert_bytecode_dump_script_ig_idl(output_of_bytecode_dumper_ig: str) -> str
     )
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("input", help="Input Luau file")
+    
+    parser.add_argument("-i", "--input", help="Input Luau file")
     parser.add_argument("-o", "--output", help="Output luauc file")
     
     args = parser.parse_args()
     
     input_file = args.input
     output_file = args.output
-    
     if not output_file:
         output_file = input("Output file: ").strip()
         
