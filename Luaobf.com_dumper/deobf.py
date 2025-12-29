@@ -2,6 +2,8 @@ import os
 import sys
 import subprocess
 import tempfile
+import argparse
+
 def make_unique_filename(name):
     if not os.path.exists(name):
         return name
@@ -21,15 +23,18 @@ def insert_bytecode_dump_script_ig_idl(output_of_bytecode_dumper_ig: str) -> str
         1
     )
 def main():
-    args = sys.argv[1:]
-    output_name = None
-    input_name = None
-    if len(args) >= 2 and args[0] == "-o":
-        output_name = args[1]
-        if len(args) >= 3:
-            input_name = args[2]
-    elif len(args) >= 1:
-        input_name = args[0]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", help="Input Luau file")
+    parser.add_argument("-o", "--output", help="Output luauc file")
+    
+    args = parser.parse_args()
+    
+    input_file = args.input
+    output_file = args.output
+    
+    if not output_file:
+        output_file = input("Output file: ").strip()
+        
     if not input_name:
         input_name = input("enter your obsufcated file: ").strip()
     with open(input_name, "r", encoding="utf-8") as f:
