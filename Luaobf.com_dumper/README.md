@@ -6,7 +6,7 @@ run this to install the dependencies
 ```
 ## Secondly
 go to the directory of the obsufcated script you want to dump.
-Example:  if you wanted to dump the bytecode of a file named "obsufcated.luau" and that was in the path "/storage/emulated/0" you wkould go to "/storage/emulated/0/" using 
+Example:  if you wanted to dump the bytecode of a file named "obsufcated.luau" and that was in the path "/storage/emulated/0" you would go to "/storage/emulated/0/" using 
 ```bash
 cd "/storage/emulated/0/"
 ```
