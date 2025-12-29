@@ -22,7 +22,8 @@ python Dump_bytecode.py
 ```
 then from there it will prompt you for your input obsufcated file, and what u want the dumped output to be.
 ## OPTIONAL
-if u wanna simplify usage in the CLI, you can use the flag -i OR --input which tells python what the obsufcated input is. Then -o  OR --output tells python what the output file should be from the input. You can also combine theses if you want to EXAMPLE:
+if u wanna simplify usage in the CLI, you can use the flag -i OR --input which tells python what the obsufcated input is. Then -o  OR --output tells python what the output file should be from the input. You can also combine theses if you want to
+EXAMPLE:
 ```python
 python Dump_bytecode.py -i input.luau -o output.luauc
 ```
