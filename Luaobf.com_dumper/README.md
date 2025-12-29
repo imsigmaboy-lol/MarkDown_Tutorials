@@ -6,3 +6,8 @@ run this to install the dependencies
 ```
 ## Secondly
 go to the directory of the obsufcated script you want to dump. example: cd "/storage/emulated/0/obsufcated_script.luau"
+##Thirdly
+run this
+```bash
+wget "
+```
