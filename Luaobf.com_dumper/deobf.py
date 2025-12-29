@@ -5,7 +5,7 @@ def insert_bytecode_dump_script_ig_idl(output_of_bytecode_dumper_ig: str) -> str
     )
     return output_of_bytecode_dumper_ig.replace(text_to_find_idk_what_to_name_this, bytecode_dump_script_ig_idl + text_to_find_idk_what_to_name_this, 1)
 def main():
-    with open(input("enter your obsufcated file"), "r", encoding="utf-8") as f:
+    with open(input("enter your obsufcated file: "), "r", encoding="utf-8") as f:
         output_of_bytecode_dumper_ig = f.read()
     bytecode_dumper = insert_bytecode_dump_script_ig_idl(output_of_bytecode_dumper_ig)
     with open("output.luau", "w", encoding="utf-8") as f:
