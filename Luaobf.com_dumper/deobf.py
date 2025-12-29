@@ -41,9 +41,9 @@ def main():
     proc = subprocess.run(["luau", tmp_path], capture_output=True)
     dumped = proc.stdout
     if not output_name:
-        output_name = input("output file name (.luac): ").strip()
-    if not output_name.lower().endswith(".luac"):
-        output_name += ".luac"
+        output_name = input("output file name (.luauc): ").strip()
+    if not output_name.lower().endswith(".luauc"):
+        output_name += ".luauc"
     output_name = make_unique_filename(output_name)
     with open(output_name, "wb") as f:
         f.write(dumped)
