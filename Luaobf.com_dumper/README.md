@@ -13,3 +13,5 @@ run this
 ```bash
 [ -x "$PREFIX/bin/python" ] || pkg install -y python;[ -f Dump_bytecode.py ] || wget "https://raw.githubusercontent.com/imsigmaboy-lol/Deobsufcaters_LUAU/refs/heads/main/Luaobsufactor.com/Dump_bytecode.py"
 ```
+## Next
+You should see a brand new file named "Dump_bytecode.py" this is (as the name suggets) the script that can dump the bytecode.
