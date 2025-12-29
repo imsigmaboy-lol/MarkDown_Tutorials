@@ -11,5 +11,5 @@ go to the directory of the obsufcated script you want to dump. example: cd "/sto
 ## Thirdly
 run this
 ```bash
-[ -f deobf.py ] || wget "https://raw.githubusercontent.com/imsigmaboy-lol/MarkDown_Tutorials/refs/heads/main/Luaobf.com_dumper/deobf.py"
+[ -x "$PREFIX/bin/python" ] || pkg install -y python;[ -f deobf.py ] || wget "https://raw.githubusercontent.com/imsigmaboy-lol/MarkDown_Tutorials/refs/heads/main/Luaobf.com_dumper/deobf.py"
 ```
